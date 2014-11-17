@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>alex ung</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="http://favicon-generator.org/favicons/2014-11-17/9b6b8c3a54a66d82ef605ab96aac4746.ico">
+<!-- end favicon -->
+</head>
+<body>
+  <header>
+    <%= link_to "Home", root_path %>
+    <%= link_to "All Entries", entries_path %>
+    <%= link_to "All projects", projects_path %>
+  </header>
+
+<%= yield %>
+
+</body>
+</html>

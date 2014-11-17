@@ -1,0 +1,14 @@
+<%= form_for :entry, url: entries_path do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %><br>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %><br>
+
+  <%= f.label :post %>
+  <%= f.text_area :post %><br>
+
+  <%= f.submit "Submit your post" %>
+
+<% end %>
