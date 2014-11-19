@@ -11,10 +11,22 @@
 <!-- end favicon -->
 </head>
 <body>
-  <header>
-    <%= link_to "Home", root_path %>
-    <%= link_to "All Entries", entries_path %>
-    <%= link_to "All projects", projects_path %>
+  <header class="clearfix mb2 outline-blue">
+
+    <div class="left p2 mr1">
+      <img src="http://i.imgur.com/DpHBikn.png" alt="Profile" width="110" height="110">
+    </div>
+
+    <div class="right p2 mr1">
+      Image
+    </div>
+
+    <div class="overflow-hidden">
+      <%= link_to "Home", root_path %>
+      <%= link_to "All Entries", entries_path %>
+      <%= link_to "All projects", projects_path %>
+    </div>
+
   </header>
 
 <%= yield %>
