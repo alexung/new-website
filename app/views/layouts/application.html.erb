@@ -17,19 +17,19 @@
       <img src="http://i.imgur.com/DpHBikn.png" alt="Profile" width="110" height="110">
     </div>
 
-    <div class="right p2 mr1">
-      Image
-    </div>
-
-    <div class="overflow-hidden">
-      <%= link_to "Home", root_path %>
-      <%= link_to "All Entries", entries_path %>
-      <%= link_to "All projects", projects_path %>
+    <div class="overflow-hidden clearfix border-bottom">
+      <%= link_to "Home", root_path, class: "left button block button-nav-light" %>
+      <%= link_to "All Entries", entries_path, class: "left button block button-nav-light"  %>
+      <%= link_to "All projects", projects_path, class: "left button block button-nav-light"  %>
     </div>
 
   </header>
-
-<%= yield %>
+<div class="col col-2">
+  ||| line breaks to give timelines
+</div>
+<div class="col col-8">
+  <%= yield %>
+</div>
 
 </body>
 </html>
