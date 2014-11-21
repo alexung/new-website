@@ -16,12 +16,19 @@
     <div class="left p2 mr1">
       <img src="http://i.imgur.com/DpHBikn.png" alt="Profile" width="110" height="110">
     </div>
-
+    <% if session[:user_id] %>
+      <%= link_to "Home", root_path, class: "left button block button-nav-light" %>
+      <%= link_to "Projects", projects_path, class: "left button block button-nav-light"  %>
+      <%= link_to "Entries", entries_path, class: "left button block button-nav-light"  %>
+      <%= link_to "New Blog Entry", new_entry_path, class: "left button block button-nav-light" %>
+    <% else %>
     <div class="overflow-hidden clearfix border-bottom">
       <%= link_to "Home", root_path, class: "left button block button-nav-light" %>
       <%= link_to "Projects", projects_path, class: "left button block button-nav-light"  %>
       <%= link_to "Entries", entries_path, class: "left button block button-nav-light"  %>
+      <%= link_to "Login", users_path, class: "left button block button-nav-light" %>
     </div>
+    <% end %>
 
   </header>
 <div class="col col-2 vertical-line">
