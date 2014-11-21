@@ -1,5 +1,25 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
 .project-image {
   height: 2%;
   width: 2%;
-  background-color: red;
+  background-color: blue;
+}
+
+.vertical-line {
+  border-right: thick solid black;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.circle {
+width:50%;
+height:15%;
+border-radius:5%;
+color:#fff;
+line-height:500px;
+background:#000
 }
