@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   end
 
   def login
-    @user = User.find_by_email(params[:email])
+    @user = User.find_by(username: params[:username])
     if @user.password == params[:password]
       give_token
       redirect_to root_path
