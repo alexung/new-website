@@ -1,29 +1,15 @@
 class UsersController < ApplicationController
-
-  def create
+  def new
     @user = User.new
-    @user.username = params[:users][:username]
-    @user.password = params[:users][:password]
-    @user.save!
-
-    if @user.password == params[:users][:password]
-      #give_token
-      redirect_to root_path
-    else
-      flash[:error] = "Your user information was not found"
-      redirect_to users_path
-    end
   end
 
-  # def login
-  #   @user = User.find_by(username: params[:username])
-  #   if @user.password == params[:password]
-  #     give_token
-  #     redirect_to root_path
-  #   else
-  #     flash[:error] = "Your user information was not found"
-  #     redirect_to users_path
-  #   end
-  # end
+  def create
+    @user = User.new(params[:user])
+    if @user.save
+      redirect_to root_path, notice: "Signed up!"
+    else
+      render "new"
+    end
+  end
 
 end
