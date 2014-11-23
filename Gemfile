@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'bcrypt-ruby', require: "bcrypt"
+gem 'bcrypt-ruby', :require => "bcrypt"
 gem 'pry'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
