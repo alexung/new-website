@@ -9,4 +9,10 @@ get "signup" => "users#new", as: "signup"
  resources :projects
  resources :users
  resources :sessions
+
+ get '/christmas', to: 'christmas_card#index'
+
+ get '/christmas-password', to: 'christmas_card#password'
+
+ post '/christmas-password-entered', to: 'christmas_card#password_entered'
 end
