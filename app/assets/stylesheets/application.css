@@ -3,7 +3,17 @@ html, body {
   min-height: 100%;
 }
 
+.christmas-card-container {
+  background: #d3d3d3 url('christmas_card_bg.jpg') top right repeat;
+}
 
+.transparent-background {
+  background-color: rgba(0,200,0,0.5);
+}
+
+.card-text {
+  color: white;
+}
 
 .project-image {
   height: 2%;
