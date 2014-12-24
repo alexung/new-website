@@ -1,3 +1,21 @@
 == alexung.github.io
 
-Until my site is out of construction.
+Merry Christmas!
+
+Step 1: git clone the repository to your local machine:
+  - open the terminal
+  - type in `cd desktop`
+  - type in `git clone https://github.com/alexung/new-website.git`
+
+Step 2: Within your terminal, type in `rails s` to start up the server
+
+Step 3: Open up 'localhost:3000' in your browser
+
+Step 4: You should see my homepage!
+
+Step 5: Navigate to "Christmas Card" on the header bar
+
+Step 6: Type in the password in the card
+
+Step 7: Enjoy!
+
