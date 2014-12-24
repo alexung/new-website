@@ -15,7 +15,7 @@ Step 4: You should see my homepage!
 
 Step 5: Navigate to "Christmas Card" on the header bar
 
-Step 6: Type in the password in the card
+Step 6: Type in the password you've found in the card into the box.
 
 Step 7: Enjoy!
 
