@@ -9,7 +9,7 @@ class ChristmasCardController < ApplicationController
   def password_entered
     if params["christmas_card"]["password"]
       if params["christmas_card"]["password"].downcase == "ilovemommyanddaddy"
-        redirect_to christmas_card_2014_path, notice: "Correct!"
+        redirect_to christmas_card_2014_path, notice: "You got the password correct! Enjoy"
       else
         redirect_to christmas_card_2014_password_path, notice: "Wrong Password!"
       end
