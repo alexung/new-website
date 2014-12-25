@@ -10,6 +10,8 @@ class ChristmasCardController < ApplicationController
     if params["christmas_card"]["password"]
       if params["christmas_card"]["password"] == "ilovemommyanddaddy"
         redirect_to christmas_path, notice: "Correct!"
+      elsif params["christmas_card"]["password"] == "iloveyay"
+        redirect_to christmas_yay_path, notice: "Correct!"
       else
         redirect_to christmas_password_path, notice: "Wrong Password!"
       end

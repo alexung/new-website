@@ -11,6 +11,10 @@ get "signup" => "users#new", as: "signup"
  resources :sessions
 
  get '/christmas', to: 'christmas_card#index'
+ get '/christmas-yay', to: 'christmas_card#yay'
+ get '/christmas-poo', to: 'christmas_card#poo_vuth'
+ get '/christmas-vuthea-pha', to: 'christmas_card#vuthea_pha'
+ get '/christmas-card-owm', to: 'christmas_card#owm'
 
  get '/christmas-password', to: 'christmas_card#password'
 
