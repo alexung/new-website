@@ -13,6 +13,16 @@ html, body {
 
 .card-text {
   color:white;
+  background: #d3d3d3 url('christmas_card_bg.jpg') top right repeat;
+}
+
+.transparent-background {
+  background-color: rgba(0,200,0,0.5);
+}
+
+.card-text {
+  color: white;
+>>>>>>> 536d820d900482fff17f57fbdfaacc2633f251d0
 }
 
 .project-image {
